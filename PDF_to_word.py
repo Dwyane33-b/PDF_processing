@@ -5,7 +5,7 @@ import easygui as eg
 def convert(pdf_name, word_name):
     pdf_file = pdf_name
     docx_file = word_name
-    # convert pdf to docx
+    # pdf文件转换维docx文件
     cv = Converter(pdf_file)
     cv.convert(docx_file, start=0, end=None)
     cv.close()
